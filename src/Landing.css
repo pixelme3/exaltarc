@@ -204,6 +204,7 @@ img {
   }
   .page .foreground .nav-container nav a::before, .page .foreground .nav-container nav a::after {
     opacity: 1;
+    margin-top: unset;
   }
   .page .foreground .nav-container nav a::before {
     margin-left: -38px;
@@ -262,10 +263,10 @@ img {
     font-size: 14pt;
     padding-top: 50px;
     margin: 0 auto 0 53px;
+    letter-spacing: 10px;
   }
   .page .foreground .nav-container nav a {
     line-height: 0;
-    letter-spacing: unset;
   }
   .page .foreground .nav-container nav a::before, .page .foreground .nav-container nav a::after {
     margin-top: 0;

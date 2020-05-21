@@ -4,6 +4,10 @@ import desktopIcon from './logo-icon-desktop.png';
 import exaltText from './exalt-text.png';
 import landingPattern from './landing-pattern.png';
 import logoTablet from './logo-full-tablet.png';
+import {
+  BrowserRouter as Router,
+  Link
+} from "react-router-dom";
 
 class Landing extends React.Component {
   render() {
@@ -26,13 +30,15 @@ class Landing extends React.Component {
               <img className="logo-tablet" src={ logoTablet } alt="logo for tablet"/>
             </div>
           </div>
-          <div className="nav-container">
-            <nav>
-              <a href="#">designs</a>
-              <a href="#">applications</a>
-              <a href="#">contact</a>
-            </nav>
-          </div>
+          <Router basename="/">
+            <div className="nav-container">
+              <nav>
+                <Link to="./designs">designs</Link>
+                <Link to="./applications">applications</Link>
+                <Link to="./contact">contact</Link>
+              </nav>
+            </div>
+          </Router>
         </div>
 
       </div>
