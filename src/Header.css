@@ -1,0 +1,43 @@
+/* Stylesheet for Header component */
+.header {
+  position: relative;
+  z-index: 1;
+}
+.header .menu {
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 10px;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+.header .menu nav {
+  display: inline-grid;
+  align-items: center;
+}
+.header .menu nav a:hover {
+  opacity: 0.6;
+}
+.header .menu nav.left {
+  grid-template-columns: 20% auto auto;
+}
+.header .menu nav.left a {
+  color: #4b4f58;
+}
+.header .menu nav.right {
+  grid-template-columns: auto auto;
+}
+.header .menu nav.right a {
+  color: #9799A6;
+}
+.header .menu img.logo.nav {
+  opacity: 0.4;
+}
+.header .menu a {
+  padding: 20px;
+  font-size: 21pt;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*# sourceMappingURL=Header.css.map */

@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Link, Route, Switch } from 'react-router-dom';
+
 import './Landing.css';
+import Gallery from './Gallery.js';
+import Showcase from './Showcase.js';
 import desktopIcon from './logo-icon-desktop.png';
 import exaltText from './exalt-text.png';
 import landingPattern from './landing-pattern.png';
 import logoTablet from './logo-full-tablet.png';
 
-class Landing extends React.Component {
+class Landing extends Component {
   render() {
     return(
       <div className="page">
         <div className="background">
-          <div className="title-background">
+          <div className="light-half">
             <img src={ landingPattern } alt="title section pattern"/>
           </div>
-          <div className="nav-background">
+          <div className="dark-half">
             <img src={ landingPattern } alt="navigation section pattern"/>
           </div>
           <img className="desktop-icon" src={ desktopIcon } alt="logo icon"/>
@@ -26,13 +30,13 @@ class Landing extends React.Component {
               <img className="logo-tablet" src={ logoTablet } alt="logo for tablet"/>
             </div>
           </div>
-          <div className="nav-container">
-            <nav>
-              <a href="#">designs</a>
-              <a href="#">applications</a>
-              <a href="#">contact</a>
-            </nav>
-          </div>
+            <div className="nav-container">
+              <nav>
+                <Link to="./designs">designs</Link>
+                <Link to="./applications">applications</Link>
+                <Link to="./contact">contact</Link>
+              </nav>
+            </div>
         </div>
 
       </div>

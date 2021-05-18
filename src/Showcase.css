@@ -1,0 +1,35 @@
+/*** Stylesheet for showcase ***/
+.page {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.page .background {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.page .background .light-half img, .page .background .dark-half img {
+  margin: 15px 0;
+}
+.page .background .light-half {
+  background-color: #9799A6;
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+}
+.page .background .dark-half {
+  background-color: #4b4f58;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+}
+
+.showcase a.applications {
+  color: white !important;
+}
+
+/*# sourceMappingURL=Showcase.css.map */
